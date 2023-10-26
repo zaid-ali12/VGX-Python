@@ -1,0 +1,989 @@
+{% load static %}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zxx"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VGX - Vision Graphics</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png'%}">
+        <link href="{% static 'https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700%7CNiconne'%}" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{% static 'favicon.ico'%}">
+
+        <!--Added Manually-->
+        <!--Social Media Icons for Footer-->
+        
+        <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'%}">
+        <!--Work with us Icons || "Added Manually" -->
+        <link rel="stylesheet" href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css'%}">
+
+        <!-- Bootstrap.css -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+        <!-- Date pixker -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.min.css'%}">
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+        <!-- XS Icon -->
+        <link rel="stylesheet" href="{% static 'css/xs-icon.css'%}">
+        <!-- Owl slider -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+        <!-- Isotope -->
+        <link rel="stylesheet" href="{% static 'css/isotope.css'%}">
+        <!-- magnific-popup -->
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="{% static 'css/plugins.css'%}" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="{% static 'css/responsive.css'%}" />
+        <style>
+            html {
+  scroll-behavior: smooth;
+}
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+                        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+          <!-- Prelaoder -->
+      <!---->  <div id="preloader">
+		<div class="preloader-window left-window color-purple"></div>
+		<div class="preloader-window right-window color-purple"></div>
+		<div class="preloader-content">
+			<img src="{% static 'img/prelaoder-logo.png'%}" alt="">
+			<h2>Vision Graphics</h2>
+		</div>
+		<div class="spinner-block">
+			<div class="spinner-eff spinner-eff-3">
+				<div class="circle circle-1"></div>
+				<div class="circle circle-2"></div>
+				<div class="circle circle-3"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Prelaoder end -->
+
+
+        <!-- Main menu -->
+        <header class="vgxai-header-section vgxai-version-1 header-height-calc-minus navbar-fixed">
+            <div class="container">
+                <div class="vgxai-logo-wraper">
+                    <!-- <a href="index.html" class="vgxai-logo"> -->
+                        <!-- <img src="img/logo.png" alt=""> -->
+                    </a>
+                </div><!-- .vgxai-logo-wraper END -->
+            </div>
+            <div class="vgxai-header-top bg-navy-blue">
+                <div class="container">
+                 <!--    <ul class="vgxai-simple-iocn-list vgxai-version-1">
+                        <li><i class="fa fa-phone"></i>+91-700 7311343</li>
+                    </ul> -->
+                     <li><i class="fa fa-envelope-o"></i> vgx.ai01@gmail.com</li>
+                </div>
+            </div><!-- .vgxai-header-top END -->
+            <div class="vgxai-main-header">
+                <div class="container">
+                    <nav class="xs_nav vgxai-nav vgxai-mega-menu">
+                        <div class="nav-header">
+                            <div class="nav-toggle"></div>
+                        </div><!---->
+                        <div class="nav-menus-wrapper" style="transition-property: none;"><span class="nav-menus-wrapper-close-button">✕</span>
+                            <ul class="nav-menu">
+
+                                                         <div class="container-logo">
+        <img src="{% static 'img/logo.png'%}" alt="" class="left-image">
+
+                                <li class=""><a href="{% static 'index-v4.html'%}">Home</a>
+                                  <!--  <ul class="nav-dropdown">
+                                        <li><a href="index.html">home version 1</a></li>
+                                        <li><a href="index-v2.html">home version 2</a></li>
+                                        <li><a href="index-v3.html">home version 3</a></li>
+                                        <li><a href="index-v4.html">home version 4</a></li>
+                                        <li><a href="index-v5.html">home version 5</a></li>
+                                    </ul> -->
+                                </li>
+                                <li class=""><a href="#about">about</a>
+                                    <!--<ul class="nav-dropdown">
+                                        <li><a href="about.html">about version 1</a></li>
+                                        <li><a href="about-v2.html">about version 2</a></li>
+                                        <li><a href="about-v3.html">about version 3</a></li>
+                                        <li><a href="about-v4.html">about version 4</a></li>
+                                        <li><a href="about-v5.html">about version 5</a></li>
+                                    </ul>-->
+                                </li>
+                                <li><a href="#services">services</a>
+                                 <!--    <ul class="nav-dropdown">
+                                       <li><a href="service.html">Software Development</a></li>
+                                        <li><a href="service-v1.html">Designing</a></li>
+                                        <li><a href="service-v2.html">Marketing</a></li>
+                                    </ul>-->
+                                </li>
+                            <!--     <li><a href="#">portfolio</a>
+                                    <ul class="nav-dropdown">
+                                        <li><a href="#">portfolio version 1</a>
+                                            <ul class="nav-dropdown">
+                                                <li><a href="portfolio-v1.html">portfolio filtering</a></li>
+                                                <li><a href="portfolio-v1-3d.html">portfolio 3d filtering</a></li>
+                                                <li><a href="portfolio-v1-2.html">portfolio out filtering</a></li>
+                                                <li><a href="portfolio-v1-2-3d.html">portfolio 3d out filtering</a></li>
+                                            </ul>
+                                        </li> -->
+                                <!--         <li><a href="#">portfolio version 2</a>
+                                            <ul class="nav-dropdown">
+                                                <li><a href="portfolio-v2.html">portfolio filtering</a></li>
+                                                <li><a href="portfolio-v2-3d.html">portfolio 3d filtering</a></li>
+                                                <li><a href="portfolio-v2-1.html">portfolio out filtering</a></li>
+                                                <li><a href="portfolio-v2-1-3d.html">portfolio 3d out filtering</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">portfolio version 3</a>
+                                            <ul class="nav-dropdown">
+                                                <li><a href="portfolio-v3.html">portfolio filtering</a></li>
+                                                <li><a href="portfolio-v3-3d.html">portfolio 3d filtering</a></li>
+                                                <li><a href="portfolio-v3-1.html">portfolio out filtering</a></li>
+                                                <li><a href="portfolio-v3-1-3d.html">portfolio 3d out filtering</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="portfolio-single.html">portfolio-single</a></li>
+                                    </ul>
+                                </li> -->
+                           <!--      <li><a href="#">blog</a>
+                                    <ul class="nav-dropdown">
+                                        <li><a href="blog.html">blog version 1</a></li>
+                                        <li><a href="blog-v2.html">blog version 2</a></li>
+                                        <li><a href="blog-post.html">blog post</a></li>
+                                    </ul>
+                                </li> -->
+                                <li><a href="#contact">Contact</a>
+                                  <!--  <ul class="nav-dropdown">
+                                        <li><a href="contact.html">contact version 1</a></li>
+                                        <li><a href="contact-v2.html">contact version 2</a></li>
+                                        <li><a href="contact-v3.html">contact version 3</a></li>
+                                    </ul>-->
+                                </li>
+                                <li><a href="#">Developers</a>
+                                    <!--  <ul class="nav-dropdown">
+                                          <li><a href="contact.html">contact version 1</a></li>
+                                          <li><a href="contact-v2.html">contact version 2</a></li>
+                                          <li><a href="contact-v3.html">contact version 3</a></li>
+                                      </ul>-->
+                                  </li>
+                                  <li><a href="#faq">FAQ</a>
+                                    <!--  <ul class="nav-dropdown">
+                                          <li><a href="contact.html">contact version 1</a></li>
+                                          <li><a href="contact-v2.html">contact version 2</a></li>
+                                          <li><a href="contact-v3.html">contact version 3</a></li>
+                                      </ul>-->
+                                  </li>
+                               <!-- <li><a href="#">element</a>
+                                    <div class="megamenu-panel">
+                                        <div class="mega-menu-overlay-img"></div>
+                                        <div class="megamenu-lists">
+                                            <ul class="megamenu-list list-col-4">
+                                                <li class="megamenu-list-title"><a href="#">other</a></li>
+                                                <li><a href="element_menu.html">Menu Styles</a></li>
+                                                <li><a href="element_footer.html">footer Styles</a></li>
+
+                                                <li><a href="element_appointment.html">appointment</a></li>
+                                                <li><a href="element_appointment-v2.html">appointment Styles</a></li>
+                                                <li><a href="element_call-to-action.html">call to action Styles</a></li>
+                                                <li><a href="element_team.html">team</a></li>
+                                                <li><a href="element_team-v2.html">team Styles</a></li>
+                                            </ul>
+                                            <ul class="megamenu-list list-col-4">
+                                                <li class="megamenu-list-title"><a href="#">other</a></li>
+                                                <li><a href="element_fun-fact.html">fun fact Styles</a></li>
+                                                <li><a href="element_pricing.html">pricing</a></li>
+                                                <li><a href="element_pricing-v2.html">pricing Styles</a></li>
+                                                <li><a href="element_sponsor.html">Clients & sponsor</a></li>
+                                                <li><a href="element_what-we-do.html">what we do</a></li>
+                                                <li><a href="element_tab.html">tab Styles</a></li>
+                                                <li><a href="element_faq.html">faq Accordion Styles</a></li>
+
+                                            </ul>
+                                            <ul class="megamenu-list list-col-4">
+                                                <li class="megamenu-list-title"><a href="#">other</a></li>
+                                                <li><a href="element_comming-soon.html">coming soon</a></li>
+                                                <li><a href="element_comming-soon-v2.html">coming soon 2</a></li>
+                                                <li><a href="element_404.html">404</a></li>
+                                                <li><a href="element_shop.html">shop</a></li>
+                                                <li><a href="cart.html">cart</a></li>
+                                                <li><a href="product-details.html">product details</a></li>
+                                            </ul>
+                                            <ul class="megamenu-list list-col-4">
+                                                <li class="megamenu-list-title"><a href="#">image</a></li>
+                                                <li class="text-content">
+                                                    <p>
+                                                        One morning, when Gregor Samsa woke from troubled dreams, he found.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>-->
+                            </div></ul>
+                        </div>
+                    </nav>  
+                </div>
+            </div><!-- .vgxai-main-header END -->
+        </header><!-- .vgxai-header-section END -->
+        <!-- Main menu closed -->
+
+        <!-- welcome section -->
+        <section class="vgxai-welcome-section vgxai-welcome-version-4 welcome-height-calc-minus" >
+            <div class="vgxai-welcome-slider-wraper">
+                <div class="vgxai-welcome-slider owl-carousel">
+                    <div class="vgxai-welcome-slider-item vgxai-version-1 vgxai-bg" style="background-image: url({% static 'img/slider-4_img_1.jpg'%});">
+                        <div class="container">
+                            <div class="vgxai-welcome-content-group">
+                                <div class="vgxai-welcome-container">
+                                    <div class="vgxai-welcome-wraper">
+                                        <p class="color-black">Tell us About Your Project</p>
+                                        <h3 class="color-purple">Book a call</h3>
+                                        <div class="vgxai-btn-wraper">
+                                            <a href="#contact" class="xs-btn bg-color-pink round-btn box-shadow-btn">Contact Now <span></span></a>
+                                            <a href="#about" class="xs-btn bg-color-purple round-btn box-shadow-btn">Read More <span></span></a>
+                                        </div>
+                                    </div>
+                                </div><!-- .vgxai-welcome-container END -->
+                            </div><!-- .vgxai-welcome-content-group END -->
+                        </div>
+                    </div><!-- .vgxai-welcome-slider-item END -->
+                    <div class="vgxai-welcome-slider-item vgxai-version-1 content-right vgxai-bg" style="background-image: url({% static 'img/slider-4_img_2.jpg' %});">
+                        <div class="container">
+                            <div class="vgxai-welcome-content-group">
+                                <div class="vgxai-welcome-container">
+                                    <div class="vgxai-welcome-wraper">
+                                        <p class="color-black">Our Innovative Approach</p>
+                                        <h3 class="color-purple">AI-Powered Solutions</h3>
+                                        <div class="vgxai-btn-wraper">
+                                            <a href="#contact" class="xs-btn bg-color-pink round-btn box-shadow-btn">Contact Now <span></span></a>
+                                            <a href="#about" class="xs-btn bg-color-purple round-btn box-shadow-btn">Read More <span></span></a>
+                                        </div>
+                                    </div>
+                                </div><!-- .vgxai-welcome-container END -->
+                            </div><!-- .vgxai-welcome-content-group END -->
+                        </div>
+                    </div><!-- .vgxai-welcome-slider-item END -->
+                    <div class="vgxai-welcome-slider-item vgxai-version-1 vgxai-bg" style="background-image: url({% static 'img/slider-4_img_3.jpg'%});">
+                        <div class="container">
+                            <div class="vgxai-welcome-content-group">
+                                <div class="vgxai-welcome-container">
+                                    <div class="vgxai-welcome-wraper">
+                                        <p class="color-black">All Your Business Needs Covered in One Place</p>
+                                        <h3 class="color-purple">Realise Your Vision</h3>
+                                        <div class="vgxai-btn-wraper">
+                                            <a href="#contact" class="xs-btn bg-color-pink round-btn box-shadow-btn">Contact Now <span></span></a>
+                                            <a href="#about" class="xs-btn bg-color-purple round-btn box-shadow-btn">Read More <span></span></a>
+                                        </div>
+                                    </div>
+                                </div><!-- .vgxai-welcome-container END -->
+                            </div><!-- .vgxai-welcome-content-group END -->
+                        </div>
+                    </div><!-- .vgxai-welcome-slider-item END -->
+                </div><!-- .vgxai-welcome-slider END -->
+            </div>
+        </section><!-- .vgxai-welcome-section END -->
+        <!-- welcome section -->
+
+        <!-- Our features -->
+		
+        <div class="vgx-headline-container ">
+            <h3 class ="color-purple  "> VGX is a Business Development Agency that helps you establish your business on the internet from the ground to all the way up.</h3>
+            <h3 style="font-size: 40px;"> Here is how we achieve this:</h3>
+
+        </div> 
+
+        <!-- <div class="mt-70" ><h2 class="element-header-example text-center color-purple">VGX is a Business Development Agency that helps you establish your business on the internet from the ground to all the way up.</h2></div>
+		<div class="mt-30" ><h2 class="vgxai-separetor-sub-heading vgxai-no-separetor text-center color-black ">Here is how we achieve this:</h2></div> -->
+
+        </div>
+        <section class="vgxai-simple-text-with-img-section vgxai-simple-text-with-img-section-v2 vgxai-no-bg" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                        <div class="vgxai-simple-img-wraper">
+                            <img src="{% static 'img/vgvision.png' %}" alt="" width=50% class="right-image">
+                        </div><!-- .vgxai-simple-img-wraper END -->
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xl-6 col-lg-6">
+                        <!-- <div class="vgxai-simple-text vgxai-watermark-icon"> -->
+                            <div>
+                            <div class="vgxai-separetor-sub-heading vgxai-no-separetor">
+                                <h2>Your Vision</h2>
+                                <div class="vgxai-separetor-sub-heading">
+
+                            </div><!-- . END -->
+                            <p class='description-texts'> It all starts with your vision.<br>
+                                At VGX, we understand that the vision of our clients is at the heart of every successful online business venture. We are deeply committed to bringing your unique vision to life in the most technologically advanced and feasible manner. Our team of experts is dedicated to not only comprehending your goals but also harnessing the full spectrum of technological possibilities to turn them into reality. We believe that your vision is the guiding star, and our role is to navigate the digital landscape, leveraging our expertise to ensure your dreams are not just realized, but exceeded. Your vision is our priority, and we are passionate about crafting tailored solutions that empower your business to thrive in today's dynamic online ecosystem.  </p>
+                                <!-- <div class="vgxai-btn-wraper">
+                                <a href="#" class="xs-btn bg-color-purple round-btn box-shadow-btn">learn more <span></span></a>
+                            </div> -->
+                        </div><!-- . END -->
+                    </div>					
+                </div>
+            </div>
+        </section><!-- .vgxai-simple-text-with-img-section END -->
+        <!-- Our features -->
+
+        <!-- Simple text with image-->
+        <section class="vgxai-simple-text-with-img-section bg-color-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xl-6 col-lg-6">
+                        <div>
+                            <div class="vgxai-separetor-sub-heading vgxai-watermark-title2 ">
+                                <h2 >Software Design and Development</h2>
+                            </div><!-- . END -->
+                            <p class='description-texts' id="#about">
+                                Good website and mobile app design matter because they create a strong first impression. A well-designed interface shows professionalism, makes navigation easy, and builds trust with users. In today's digital world, a user-friendly and visually appealing design is crucial for keeping people engaged and interested in your brand.
+                                
+Our commitment is to create mobile apps and websites that leave a remarkable first impression. We prioritize easy navigation, user-friendliness, and stunning design in every project. Our skilled team meticulously crafts interfaces that not only look beautiful but also function seamlessly. We believe that a great first impression is the foundation of a successful digital presence. When users encounter an effortlessly navigable and visually appealing platform, it instills confidence, trust, and a positive perception of your brand. We take pride in ensuring that our designs not only captivate but also engage users, leaving them with an unforgettable and favorable impression of your business.
+                            </p>
+                            <!-- <div class="vgxai-btn-wraper">
+                                <a href="#" class="xs-btn bg-color-purple round-btn box-shadow-btn">learn more <span></span></a>
+                            </div> -->
+                        </div><!-- . END -->
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                        <div class="vgxai-simple-img-wraper">
+                            <img src="{% static 'img/whatwedo.png' %}" alt="">
+                        </div><!-- .vgxai-simple-img-wraper END -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- .vgxai-simple-text-with-img-section END -->
+        <!-- Simple text with image end -->
+
+        <!-- Simple text with image version 2-->
+        <section class="vgxai-simple-text-with-img-section vgxai-simple-text-with-img-section-v2 vgxai-no-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                        <div class="vgxai-simple-img-wraper">
+                            <img src="{% static 'img/market.png' %}" alt=""class="right-image">
+                        </div><!-- .vgxai-simple-img-wraper END -->
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xl-6 col-lg-6">
+                        <!-- <div class="vgxai-simple-text vgxai-watermark-icon"> -->
+                            <div>
+                            <div class="vgxai-separetor-sub-heading vgxai-no-separetor">
+                                <h2>Digital Marketing</h2>
+                                <div class="vgxai-separetor-sub-heading">
+
+                            </div><!-- . END -->
+                            <p class='description-texts'> Our comprehensive approach to marketing our clients' online businesses is driven by a commitment to achieving outstanding results. To ensure maximum visibility, we begin by optimizing websites and apps with cutting-edge SEO techniques, securing prime positions in organic search results. Furthermore, we understand the critical importance of branding in making a lasting impression. Thus, we meticulously craft logos, design icons, and create assets tailored to the app or website's unique identity. Our expertise extends to establishing a robust online presence through social media account setup on multiple platforms. Engaging content creation and regular posting ensure consistent audience engagement. As projects scale, our arsenal of marketing strategies expands to encompass email marketing, affiliate marketing, and content marketing, among others. Our holistic approach ensures that your online business not only thrives but also stands out in the digital landscape, driving success and growth.   <!-- <div class="vgxai-btn-wraper">
+                                <a href="#" class="xs-btn bg-color-purple round-btn box-shadow-btn">learn more <span></span></a>
+                            </div> -->
+                        </div><!-- . END -->
+                    </div>					
+                </div>
+            </div>
+        </section>
+                        <h1> <br></h1>
+
+        <div class=" bg-color-cream" id ="services">
+                            <h1> <br></h1>
+
+            <div class="vgxai-section-headinig vgxai-watermark-title">
+                <i class="xsicon icon-adjustments"></i>
+                
+                <h2 data-title="Services" class="color-black">Our Services</h2>
+                <p>
+                    Take a look at the services we offer
+                </p>
+            </div>
+        <section class="vgxai-service-section section-padding2" id="service1">
+            <div class="container">
+                <div class="vgxai-tab">
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs vgxai-top-nav">
+                            <li class="active"><a href="#designing" data-toggle="tab"><i class="xsicon icon-paintbrush"></i><span>Designing</span></a></li>
+                            <li><a href="#software_dev" data-toggle="tab"><i class="xsicon icon-laptop"></i><span>Software Development</span></a></li>
+                            <li><a href="#marketing" data-toggle="tab"><i class="xsicon icon-star2"></i><span>Digital Marketing</span></a></li>
+                        <!--	<li><a href="#massage" data-toggle="tab"><i class="xsicon icon-massage"></i><span>massage</span></a></li>
+                            <li><a href="#nail" data-toggle="tab"><i class="xsicon icon-nail"></i><span>Nail care</span></a></li>
+                            <li><a href="#waxing" data-toggle="tab"><i class="xsicon icon-hair-removal"></i><span>waxing</span></a></li>-->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="designing">
+                                <div class="tabbable">
+                                    <ul class="nav nav-tabs vgxai-side-nav">
+                                        <li class="active"><a href="#ui_design" data-toggle="tab">UI Design</a></li>
+                                        <li><a href="#logo_creation" data-toggle="tab">Logo Design</a></li>
+                                        <li><a href="#icons_asset" data-toggle="tab">Icons and Asset Generation</a></li>
+                                        <li><a href="#business_cover" data-toggle="tab">Banners/Business Covers</a></li>
+                                        <!-- <li><a href="#teens_makeup" data-toggle="tab">Reddit</a></li> -->
+                                        
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane vgxai-tab-content active" id="ui_design">
+                                            <div class="vgxai-spilit-container">
+                                                <div class="vgxai-tab-image">
+                                                    <img src="{% static 'img/service-tab-img-1.jpg' %}" alt="Image">
+                                                    <!-- <div class="vgxai-tab-image-content">
+                                                        <span class="vgxai-iocn-btn full-round-btn bg-color-purple">$50</span>
+                                                    </div> -->
+                                                </div>
+                                                <div class="vgxai-tab-text-content">
+                                                    <h3>UI Design</h3>
+                                                    <p style="text-align: justify;"> 
+                                                        We excel in designing user-friendly and visually appealing interfaces for websites and mobile apps. Our process is driven by a deep understanding of client needs and user preferences, prioritizing functionality and aesthetics. We aim to exceed user expectations by creating intuitive, responsive, and engaging interfaces that enhance the overall user experience. Exceptional UI design is at the core of our approach, ensuring the success of digital projects.
+                                                    </p>
+                                                    <!-- <p> A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there</p> -->
+                                                    <!-- <div class="vgxai-btn-wraper">
+                                                        <a href="#" class="xs-btn round-btn box-shadow-btn bg-color-purple">get appointment <span></span></a>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div><!-- #mens_makeup END -->
+    
+                                        <div class="tab-pane vgxai-tab-content" id="logo_creation">
+                                            <div class="vgxai-spilit-container">
+                                                <div class="vgxai-tab-image">
+                                                    <img src="{% static 'img/service-tab-img-2.jpg' %}" alt="Image">
+                                                    <!-- <div class="vgxai-tab-image-content">
+                                                        <span class="vgxai-iocn-btn full-round-btn bg-color-purple">$50</span>
+                                                    </div> -->
+                                                </div>
+                                                <div class="vgxai-tab-text-content">
+                                                    <h3>Logo Design</h3>
+                                                    <p style="text-align: justify;"> 
+                                                        Our logo design process is a blend of creativity and strategy. We work closely with clients to understand their project's essence and target audience. Our skilled designers craft logos that encapsulate the project's identity, values, and mission in a visually compelling and memorable symbol. Our focus is on creating logos that make a powerful and lasting impression, ultimately enhancing brand recognition and establishing a unique identity in the market.	</p>
+                                                    <!-- <p> A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there</p> -->
+                                                    <!-- <div class="vgxai-btn-wraper">
+                                                        <a href="#" class="xs-btn round-btn box-shadow-btn bg-color-purple">get appointment <span></span></a>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Logo Creation  -->
+                                        <div class="tab-pane vgxai-tab-content" id="icons_asset">
+                                            <div class="vgxai-spilit-container">
+                                                <div class="vgxai-tab-image">
+                                                    <img src="{% static 'img/service-tab-img-5.jpg' %}" alt="Image">
+                                                    <!-- <div class="vgxai-tab-image-content">
+                                                        <span class="vgxai-iocn-btn full-round-btn bg-color-purple">$50</span>
+                                                    </div> -->
+                                                </div>
+                                                <div class="vgxai-tab-text-content">
+                                                    <h3>Icons/Asset Generation</h3>
+                                                    <p style="text-align: justify;"> 
+                                                        We're committed to providing clients with custom-crafted icons and assets that perfectly complement their project's vision. Our creative team pays meticulous attention to detail, ensuring that each icon and asset aligns seamlessly with the project's identity and requirements. These visual elements not only enhance user experience but also contribute to a cohesive and polished brand presentation. We understand the importance of icons and assets in conveying information and aesthetics, and we're dedicated to delivering high-quality, tailor-made solutions that elevate the overall project's appeal and functionality.
+                                                    </p>
+                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Icon Asset Creation  -->
+                                        <div class="tab-pane vgxai-tab-content" id="business_cover">
+                                            <div class="vgxai-spilit-container">
+                                                <div class="vgxai-tab-image">
+                                                    <img src="{% static 'img/service-tab-img-4.jpg' %}" alt="Image">
+                                                    <!-- <div class="vgxai-tab-image-content">
+                                                        <span class="vgxai-iocn-btn full-round-btn bg-color-purple">$50</span>
+                                                    </div> -->
+                                                </div>
+                                                <div class="vgxai-tab-text-content">
+                                                    <h3>Banners/Business Covers</h3>
+                                                    <p style="text-align: justify;"> 
+                                                        We create captivating business covers tailored to our clients' projects, designed to resonate with their audience and convey professionalism. Whether for mobile apps, websites, or social media profiles, our covers make a lasting impression, serving as a pivotal touchpoint for stakeholders and strengthening brand identity.
+    </p>
+                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Business Cover -->
+                                    </div><!-- .tab-content END -->
+                                </div>
+                            </div><!-- #section1 END -->
+    
+                            <div class="tab-pane" id="software_dev">
+                                <div class="tabbable tabs-left">
+                                    
+                                    <ul class="nav nav-tabs vgxai-side-nav">
+                                        <li class="active"><a href="#web_dev" data-toggle="tab">Web Development</a></li>
+                                        <li><a href="#app_dev" data-toggle="tab">Mobile Application Development</a></li>
+                                        <!-- <li><a href="#web_apps" data-toggle="tab">Web Apps</a></li> -->
+                                        <li><a href="#code_optimize" data-toggle="tab">Code Optimization</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane vgxai-tab-content active" id="web_dev">
+                                            <div class="vgxai-spilit-container">
+                                                <div class="vgxai-tab-image">
+                                                    <img src="{% static 'img/service-tab2-img-1.jpg' %}" alt="Image">
+                                                </div>
+                                                <div class="vgxai-tab-text-content">
+                                                    <h3>Web Development</h3>
+                                                    <p style="text-align:justify"> 
+                                                        At VGX, we take pride in building dynamic websites that bring our clients' projects to life. Our approach combines creativity with technical expertise to deliver websites that align seamlessly with our clients' goals and vision. We prioritize user-friendly navigation, captivating design, and responsive functionality to ensure an engaging and seamless user experience. With a strong focus on customization and attention to detail, our team crafts websites that not only reflect the unique identity of each project but also drive results and leave a lasting digital impression.	</p>
+                                                
+                                                </div>
+                                            </div>
+                                        </div><!-- #web dev END -->
+                                        <div class="tab-pane vgxai-tab-content" id="app_dev">
+                                            <div class="vgxai-spilit-container">
+                                                <div class="vgxai-tab-image">
+                                                    <img src="{% static 'img/service-tab2-img-2.jpg' %}" alt="Image">
+                                                    <!-- <div class="vgxai-tab-image-content">
+                                                        <span class="vgxai-iocn-btn full-round-btn bg-color-purple">$50</span>
+                                                    </div> -->
+                                                </div>
+                                                <div class="vgxai-tab-text-content">
+                                                    <h3>Mobile App Development</h3>
+                                                    <p style="text-align: justify;"> 
+                                                        We specialize in mobile app development, offering both cross-platform solutions using Google's Flutter Framework and native development, depending on project needs. Our experienced team excels in Flutter for efficient cross-platform functionality on Android and iOS devices. When necessary, we leverage native development for platform-specific advantages. Our commitment is to deliver high-quality mobile and web apps that align with clients' objectives and provide top-notch user experiences, whether through cross-platform efficiency or native optimization.
+    
+    
+    
+                                                    </p>
+                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- App dev end -->
+                                    <div class="tab-pane vgxai-tab-content" id="code_optimize">
+                                        <div class="vgxai-spilit-container">
+                                            <div class="vgxai-tab-image">
+                                                <img src="{% static 'img/service-tab2-img-3.jpg' %}" alt="Image">
+                                                 <!-- <div class="vgxai-tab-image-content">
+                                                    <span class="vgxai-iocn-btn full-round-btn bg-color-purple">$50</span>
+                                                </div>  -->
+                                             </div>
+                                            <div class="vgxai-tab-text-content">
+                                                <h3>Code Optimization</h3>
+                                                <p style="text-align: justify;"> 
+                                                    We also offer code optimization for our clients' projects. Our team of skilled developers meticulously reviews and refines existing codebases, ensuring they are not only efficient but also perform at their peak. Through careful analysis and enhancements, we minimize redundancies, improve loading times, and enhance overall application responsiveness. Our code optimization services not only boost performance but also reduce maintenance costs, ultimately providing our clients with a smoother and more efficient digital experience.
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    </div>
+                                </div>
+                            </div><!-- section2 END -->
+    
+                            <div class="tab-pane" id="marketing">
+                                <div class="tabbable">
+                                    <ul class="nav nav-tabs vgxai-side-nav">
+                                        <li class="active"><a href="#seo" data-toggle="tab">Search Engine Optimization (SEO)</a></li>
+                                        <li><a href="#social_media" data-toggle="tab">Social Media</a></li>
+                                        <li><a href="#marketing_tactics" data-toggle="tab">Dynamic Marketing</a></li>
+                                        <!-- <li><a href="#content_marketing" data-toggle="tab">Content Marketing</a></li>
+                                        <li><a href="#affiliate_marketing" data-toggle="tab">Affiliate Marketing</a></li> -->
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane vgxai-tab-content active" id="seo">
+                                            <div class="vgxai-spilit-container">
+                                                <div class="vgxai-tab-image">
+                                                    <img src="{% static 'img/service-tab3-img-1.jpg' %}" alt="Image">
+                                                </div>
+                                                <div class="vgxai-tab-text-content">
+                                                    <h3>SEO</h3>
+                                                    <p>
+                                                        We provide expert SEO services as a cornerstone of our marketing strategy. Our dedicated team employs a data-driven approach to optimize our clients' online presence for search engines. From keyword research to on-page and off-page optimization, we ensure websites and content are visible to the right audience at the right time. With a focus on organic growth, we aim to improve search engine rankings, drive targeted traffic, and boost brand visibility. Our SEO services are designed to maximize online exposure and help clients achieve their marketing goals efficiently.
+                                                    </p>												</div>
+                                            </div>
+                                        </div><!-- SEO END -->
+    
+                                        <div class="tab-pane vgxai-tab-content" id="social_media">
+                                            <div class="vgxai-spilit-container">
+                                                <div class="vgxai-tab-image">
+                                                    <img src="{% static 'img/service-tab3-img-2.jpg' %}" alt="Image">
+                                                </div>
+                                                <div class="vgxai-tab-text-content">
+                                                    <h3>Social Media</h3>
+                                                    <p>
+                                                        At VGX, we provide complete social media solutions, including account setup, engaging content creation, and strategic growth management for clients. With our robust social media presence across multiple platforms, we understand the pivotal role of social media today. From creating compelling profiles to dynamic posts and growth strategies, our monthly account management ensures a consistent online presence, connecting with your audience and driving long-term success.
+    
+    
+    
+    
+                                                    </p>												</div>
+                                            </div>
+                                        </div><!-- Social Media END -->
+                                        <div class="tab-pane vgxai-tab-content" id="marketing_tactics">
+                                            <div class="vgxai-spilit-container">
+                                                <div class="vgxai-tab-image">
+                                                    <img src="{% static 'img/service-tab3-img-3.jpg' %}" alt="Image">
+                                                </div>
+                                                <div class="vgxai-tab-text-content">
+                                                    <h3>Marketing Tactics</h3>
+                                                    <p>
+                                                        We take a tailored approach to marketing services, offering a dynamic range of strategies such as content marketing, affiliate marketing, and email marketing precisely when our clients need them. Our flexible methodology allows us to adapt to specific objectives and project requirements, ensuring that we deploy the right tools at the right time. Whether it's creating compelling content, establishing strategic affiliate partnerships, or nurturing customer relationships through email campaigns, our commitment is to provide on-demand marketing solutions that drive engagement, foster growth, and deliver tangible results for our clients.
+                                                    </p>				</div>
+                                            </div>
+                                        </div><!-- marketing tactics END -->
+                        </div>
+                    </div><!-- .tabbable END -->
+                </div><!-- .vgxai-tab END -->
+                <h1> <br><br></h1>
+            </div>
+            
+        </section>
+    </div>
+		<!-- Service section -->
+        <section id ="contact" class="vgxai-booking-section vgxai-bg vgxai-padding-bottom parallax-bg" data-parrlax="scroll" data-image-src="img/soft1.png" id="contact">
+            <div class="container">
+                <div class="vgxai-section-headinig vgxai-version-2">
+                    <h2>We are here to take you all the way up!</h2>
+                    <h3>Get a CALL FROM US</h3>
+                    <img src="img/inner-welcome-icon.png" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                        <div class="vgxai-booking-text-wraper">
+                            <div class="vgxai-booking-content-text vgxai-border vgxai-version-3">
+                                <div class="vgxai-booking-text">
+                                    <h2>Connect with us!</h2>
+                                    <h3 style="font-size: x-large;">We Will Reach You Shortly</h3>
+                                    <div class="vgxai-icon-bg-text">
+                                        <p>
+                                            We're eager to hear about your project! Please provide a brief overview, including your goals. This will help us customize our services to your needs and ensure your project's success.
+                                            <br><br>Expect a call from us soon to discuss your project in detail!
+                                        </div><!-- .vgxai-icon-bg-text END -->
+                                    <!-- <ul>
+                                        <li>Mon - Wed : 8:00am - 06:00pm</li>
+                                        <li>Thu - Sat : 10:00am - 10:00pm</li>
+                                        <li>Sunday: Close</li>
+                                    </ul> -->
+                                </div><!-- .vgxai-booking-text END -->
+                            </div><!-- .vgxai-booking-content-text END -->
+                        </div><!-- .vgxai-booking-text-wraper END -->
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                        <div class="vgxai-booking-form-wraper">
+                            <form action="#" method="POST" id="vgxai-booking-form">
+                                <input type="hidden" name="action" value="send_appointment_form"/>
+                                <div class="alert hidden" id="vgxai-form-msg"></div>
+                                <!-- <div class="vgxai-service-and-date">
+                                    <h2>Service and Date</h2>
+                                    <div class="vgxai-select">
+                                        <div class="input-group">
+                                            <select name="appointment-service" id="appointment-service" class="form-control">
+                                                <option value="">Select your service</option>
+                                                <option value="Oil Massage">WEB DEVLOPMENT ($59.00)</option>
+                                                <option value="Relax Day">CONTENT CREATION ($199.00)</option>
+                                                <option value="Spa & Beauty">AI SERVICES ($299.00)</option>
+                                                <option value="Relax Day (for Two)">OTHERS (for Two $399.00)</option>
+                                            </select>
+                                        </div>
+                                    </div>.vgxai-select END -->
+                                    <!-- <div class="vgxai-spilit-container">
+                                        <div class="vgxai-date-select vgxai-select">
+                                            <div class="input-group">
+                                                <input type="text" id="appointment-date" class="form-control datepicker" name="appointment-date" placeholder="Date Shedule">
+                                            </div>
+                                        </div>.vgxai-date-select END -->
+                                        <!-- <div class="vgxai-select">
+                                            <div class="input-group">
+                                                <select name="appointment-time" id="appointment-time" class="form-control">
+                                                    <option value="">Time Shedule</option>
+                                                    <option value="12:00 AM">12:00 AM</option>
+                                                    <option value="12:30 AM">12:30 AM</option>
+                                                    <option value="01:00 AM">01:00 AM</option>
+                                                    <option value="01:30 AM">01:30 AM</option>
+                                                    <option value="02:00 AM">02:00 AM</option>
+                                                    <option value="02:30 AM">02:30 AM</option>
+                                                    <option value="03:00 AM">03:00 AM</option>
+                                                    <option value="03:30 AM">03:30 AM</option>
+                                                    <option value="04:00 AM">04:00 AM</option>
+                                                    <option value="04:30 AM">04:30 AM</option>
+                                                    <option value="05:00 AM">05:00 AM</option>
+                                                    <option value="05:30 AM">05:30 AM</option>
+                                                    <option value="06:00 AM">06:00 AM</option>
+                                                    <option value="06:30 AM">06:30 AM</option>
+                                                    <option value="07:00 AM">07:00 AM</option>
+                                                    <option value="07:30 AM">07:30 AM</option>
+                                                    <option value="08:00 AM">08:00 AM</option>
+                                                    <option value="08:30 AM">08:30 AM</option>
+                                                    <option value="09:00 AM">09:00 AM</option>
+                                                    <option value="09:30 AM">09:30 AM</option>
+                                                    <option value="10:00 AM">10:00 AM</option>
+                                                    <option value="10:30 AM">10:30 AM</option>
+                                                    <option value="11:00 AM">11:00 AM</option>
+                                                    <option value="11:30 AM">11:30 AM</option>
+                                                    <option value="12:00 PM">12:00 PM</option>
+                                                    <option value="12:30 PM">12:30 PM</option>
+                                                    <option value="01:00 PM">01:00 PM</option>
+                                                    <option value="01:30 PM">01:30 PM</option>
+                                                    <option value="02:00 PM">02:00 PM</option>
+                                                    <option value="02:30 PM">02:30 PM</option>
+                                                    <option value="03:00 PM">03:00 PM</option>
+                                                    <option value="03:30 PM">03:30 PM</option>
+                                                    <option value="04:00 PM">04:00 PM</option>
+                                                    <option value="04:30 PM">04:30 PM</option>
+                                                    <option value="05:00 PM">05:00 PM</option>
+                                                    <option value="05:30 PM">05:30 PM</option>
+                                                    <option value="06:00 PM">06:00 PM</option>
+                                                    <option value="06:30 PM">06:30 PM</option>
+                                                    <option value="07:00 PM">07:00 PM</option>
+                                                    <option value="07:30 PM">07:30 PM</option>
+                                                    <option value="08:00 PM">08:00 PM</option>
+                                                    <option value="08:30 PM">08:30 PM</option>
+                                                    <option value="09:00 PM">09:00 PM</option>
+                                                    <option value="09:30 PM">09:30 PM</option>
+                                                    <option value="10:00 PM">10:00 PM</option>
+                                                    <option value="10:30 PM">10:30 PM</option>
+                                                    <option value="11:00 PM">11:00 PM</option>
+                                                    <option value="11:30 PM">11:30 PM</option>
+                                                </select>
+                                            </div> -->
+                                        <!-- </div>.vgxai-select END -->
+                                    <!-- </div>
+                                </div>.vgxai-service-and-date END -->
+                                <div class="vgxai-personal-information">
+                                    <h2>Your Information</h2>
+                                    <div class="vgxai-spilit-container">
+                                        <div class="form-group first-name-group">
+                                            <input type="text" name="first-name" class="form-control" id="first-name" placeholder="Name....">
+                                        </div>
+                                        <div class="form-group email-group">
+                                            <input type="email" name="email" class="form-control" id="email" placeholder="Email Address....">
+                                        </div>
+                                    </div>
+                                    <div class="form-group phone-group">
+                                        <input type="number" name="phone" class="form-control" id="phone" placeholder="Phone Number....">
+                                    </div>
+                                    <div class="form-group massage-gropu">
+                                        <textarea class="form-control" rows="5" id="appointment-comment" placeholder="Tell us about your project...."></textarea>
+                                    </div>
+                                    <div class="form-group button-group">
+                                        <input type="submit" name="submit" value="submit" id="vgxai-submit">
+                                    </div>
+                                </div><!-- .vgxai-personal-information END -->
+                            </form><!-- #vgxai-booking-form END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- .vgxai-booking-section END -->
+
+    <!-- .vgxai-service-section END -->
+	<!-- Service section closed -->
+        <!-- partner section -->
+        <section class="vgxai-partner-section section-padding3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xl-6">
+                        <div class="vgxai-partner-text-content">
+                            <div class="vgxai-sub-heading vgxai-watermark-title">
+                                <h2 data-title="">Our Partners</h2>
+                            </div><!-- .vgxai-sub-heading END -->
+                            <p>
+                                Our partners are the backbone of our success. We take great pride in collaborating with a diverse network of trusted partners who share our commitment to excellence and innovation. Together, we combine our strengths to deliver exceptional solutions and drive mutual growth. Our strong partnerships enable us to provide our clients with a broader spectrum of services and expertise, ensuring that we remain at the forefront of industry trends and technology. We deeply value the relationships we have built and look forward to continued success through collaboration with our esteemed partners.                            </p>
+                        </div><!-- .vgxai-partner-text-content END -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xl-6">
+                        <div class="vgxai-partner-wraper">
+                            <ul class="vgxai-partner-list">
+                                <li><img src="{% static 'img/brands-1.png' %}" alt=""></li>
+                                <li><img src="{% static 'img/brands-2.png' %}" alt=""></li>
+                                <li><img src="{% static 'img/brands-3.png' %}" alt=""></li>
+                                <li><img src="{% static 'img/brands-4.png' %}" alt=""></li>
+                                <li><img src="{% static 'img/brands-5.png' %}" alt=""></li>
+                                <li><img src="{% static 'img/brands-6.png' %}" alt=""></li>
+                            </ul><!-- .vgxai-partner-list END -->
+                        </div><!-- .vgxai-partner-wraper END -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- .vgxai-partner-section END -->
+        <!-- partner section end -->
+        <!--Section: FAQ-->
+                <section class=" bg-color-gray" style="padding: 3%;" id="faq">
+<!-- <section class="vgxai-simple-text-with-img-section bg-color-gray" style="padding: 3%;"> -->
+    <div class="vgxai-section-headinig vgxai-watermark-title">
+        <i class="xsicon icon-book"></i>
+        <h2 data-title="" class="color-black">Frequently Asked Questions</h2>
+    <!-- <h3 class="text-center mb-4 pb-2 text-primary fw-bold color-purple">FAQ</h3> -->
+    <p class="text-center mb-5">
+      Find the answers for the most frequently asked questions below
+    </p>
+      <!-- <div class="faq-section"> -->
+
+    <div class="row" style="text-align: left;">
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary color-purple"><i class="fas fa-book-open text-primary pe-2 "></i> 
+            1. What is VGX?
+        </h6>
+        <p>
+          <!-- <strong><u>VGX</u></strong> -->
+           VGX is a dynamic business development agency that specializes in providing a wide range of services to help businesses thrive in the digital landscape. Our expertise includes marketing, web and mobile app development, UI/UX design, and more.
+        </p>
+      </div>
+  
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary color-purple"><i class="fas fa-book-open text-primary pe-2 "></i> 
+            2. What services does VGX offer?
+        </h6>
+        <p>
+          <!-- <strong><u>Yes, it is possible!</u></strong>  -->
+          1 offers a comprehensive suite of services, including web and mobile app development, digital marketing, UI/UX design, branding, code optimization, and social media management. We tailor our services to meet the unique needs of each client.
+        </p>
+      </div>
+  
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary color-purple"><i class="fas fa-book-open text-primary pe-2 "></i> 
+            3. How can I contact VGX for inquiries or services?
+        </h6>
+        <p>
+            You can easily get in touch with us through our website's contact form or by sending an email to vgx.ai01@gmail.com. We're also available on social media platforms, so feel free to reach out there.
+
+        </p>
+      </div>
+  
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary color-purple"><i class="fas fa-book-open text-primary pe-2 "></i> 
+            4. Does VGX work with clients from different industries?
+        </h6>
+        <p>
+            Yes, VGX has experience working with clients from a wide range of industries, including e-commerce, healthcare, finance, technology, and more. Our adaptable approach allows us to cater to various business sectors.
+        </p>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary color-purple"><i class="fas fa-book-open text-primary pe-2 "></i> 
+            5. Does VGX offer its services individually?
+        </h6>
+        <!-- <p><strong><u>Unfortunately no</u>.</strong> -->
+            Yes, VGX offers individual services. We customize solutions to meet your unique requirements, whether it's web development, digital marketing, design, or any other service. Your goals are our priority.    </p>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary color-purple"><i class="fas fa-book-open text-primary pe-2 "></i> 
+            6. Is VGX open to collaboration and partnerships?
+        </h6>
+        <p>
+            Yes, VGX is open to collaborations and partnerships with businesses, organizations, and other agencies. We believe in leveraging collective expertise to achieve mutual success.
+        </p>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary color-purple"><i class="fas fa-book-open text-primary pe-2 "></i> 
+            7. What is VGX's approach to pricing and project timelines?
+        </h6>
+        <p>
+            Our pricing and project timelines are customized based on the specific needs and scope of each project. We work closely with clients to provide transparent and competitive pricing while ensuring realistic timelines for project completion.
+        </p>
+      </div>
+  
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary color-purple"><i class="fas fa-book-open text-primary pe-2 "></i> 
+            8. How can I stay updated with VGX news and insights?
+
+        </h6>
+        <!-- <p><strong><u>Unfortunately no</u>.</strong> -->
+            You can stay informed about VGX news, insights, and industry trends by subscribing to our newsletter, following us on social media, or visiting our blog on our website.
+
+        </p>
+      </div>
+  
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary color-purple"><i class="fas fa-book-open text-primary pe-2 "></i> 
+            9. Does VGX provide ongoing project support and maintenance?
+
+
+
+
+
+        </h6>
+        <p>
+            Yes, VGX provides ongoing support and maintenance services to ensure that our clients' projects remain up-to-date, secure, and optimized for peak performance.
+        </p>
+      </div>
+      <!-- </div> -->
+     
+    </div>
+    <p style="font-size: 13;font-weight: 600;text-align: left;">
+        Please note that these are general FAQs, and specific questions may vary depending on the nature of the business and services provided by VGX.
+    </p>
+  </section>
+  <!--Section: FAQ-->
+        
+
+        <!-- Footer section -->
+        <!--Footer updated-->
+        <!-- <footer class="vgxai-footer-section"> rum -->
+            <footer style="background-color: brown;">
+            <div class="footer-container">
+                <div class="vgxai-footer-content">
+                    <!--<div class="vgxai-footer-logo">
+                        <a href="index.html">
+                            <img src="img/footer_logo.png" alt="">
+                        </a>
+                    </div> .vgxai-footer-logo END -->
+                    <div class="vgxai-subscribe-wraper" style="padding-top: 2%;">
+                        <h3>Subscribe to our mailing list</h3>
+                        <form action="https://formsubmit.co/el/tiyegu" method="POST" class="mc-form">
+                            {% csrf_token %}
+                            <div class="vgxai-subscribe">
+                                <input type="email" placeholder="Enter your email address....." id="mc-email">
+                                <input type="submit" value="subscribe" class="vgxai-sub">
+                                <label for="mc-email"></label>
+                            </div><!-- .vgxai-subscribe END -->
+                        </form>
+                    </div><!-- .vgxai-subscribe-wraper END -->
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4">
+                            <div class="vgxai-single-footer social-media-follow">
+                                <p>
+                                    Follow us on Social Media
+                                </p>
+                                <span>
+                                    <a href="#" class="bi bi-facebook"></a>
+                                </span>
+                                <span>
+                                    <a href="#" class="bi bi-twitter-x"></a>
+                                </span>
+                                <span>
+                                    <a href="#" class="bi bi-instagram"></a>
+                                </span>
+                                <span>
+                                    <a href="#" class="bi bi-linkedin"></a>
+                                </span>
+                            </div><!-- .vgxai-single-footer END -->
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4">
+                         
+                            <img src="{% static 'img/big-white-vgx.png' %}" alt="">
+                              
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4">
+                            <div class="vgxai-single-footer vgxai-single-footer-group">
+                                <div class="footer-info-col"><span><i class="bi bi-house-door-fill"></i></span><span><p>176 W street name, New York, NY 10014</p></span></div>
+                                <div class="footer-info-col"><span><i class="bi bi-envelope-fill"></i></span><span><p>Email: vgx.ai01@gmail.com</p></span></div>
+                                <div class="footer-info-col"><span><i class="bi bi-telephone-fill"></i></span><span><p>Telephone: +91-700-731-1343</p></span></div>
+                            </div><!-- .vgxai-single-footer END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vgxai-copyright-content">
+                <div class="container">
+                    <div class="vgxai-copyright-text">
+                        <p><a href="https://vgx.ai">Vision Graphics</a> &copy; 2023 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- .vgxai-footer-section END -->
+        <!-- Footer section end -->
+
+        <script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+        <script src="{% static 'js/plugins.js'%}"></script>
+        <script src="{% static 'js/bootstrap.min.js'%}"></script>
+        <script src="{% static 'js/bootstrap-datepicker.min.js'%}"></script>
+        <script src="{% static 'js/isotope.pkgd.min.js'%}"></script>
+        <script src="{% static 'js/jquery.ajaxchimp.min.js'%}"></script>
+        <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
+        <script src="{% static 'js/appear.js'%}"></script>
+        <script src="{% static 'js/spectragram.min.js'%}"></script>
+        <script src="{% static 'https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k'%}"></script>
+        <script src="{% static 'js/main.js'%}"></script>
+    </body>
+</html>
