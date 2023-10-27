@@ -1,0 +1,563 @@
+{% load static %}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zxx"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VGX - For Developers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png'%}">
+        <link href="{% static 'https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700%7CNiconne'%}" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{% static 'favicon.ico'%}">
+
+        <!--Work with us Icons || "Added Manually" -->
+        <link rel="stylesheet" href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css'%}">
+
+        <!-- Bootstrap.css -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+        <!-- Date pixker -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.min.css'%}">
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+        <!-- XS Icon -->
+        <link rel="stylesheet" href="{% static 'css/xs-icon.css'%}">
+        <!-- Owl slider -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+        <!-- Isotope -->
+        <link rel="stylesheet" href="{% static 'css/isotope.css'%}">
+        <!-- magnific-popup -->
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="{% static 'css/plugins.css'%}" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="{% static 'css/responsive.css'%}" />
+    </head>
+    <body>{% static '
+        <!--[if lt IE 8]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Prelaoder -->
+      <!---->  <div id="preloader">
+            <div class="preloader-window left-window"></div>
+            <div class="preloader-window right-window"></div>
+            <div class="preloader-content">
+                <img src="{%static 'img/prelaoder-logo.png' %}" alt="">
+                <h2>Vision Graphics</h2>
+            </div>
+            <div class="spinner-block">
+                <div class="spinner-eff spinner-eff-3">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Prelaoder end -->
+
+        <!-- Main menu -->
+        <header class="vgxai-header-section vgxai-version-1 header-height-calc-minus navbar-fixed">
+            <div class="container">
+                <div class="vgxai-logo-wraper">
+                    <!-- <a href="index.html" class="vgxai-logo"> -->
+                        <!-- <img src="img/logo.png" alt=""> -->
+                    </a>
+                </div><!-- .vgxai-logo-wraper END -->
+            </div>
+            <div class="vgxai-header-top bg-navy-blue">
+                <div class="container">
+                 <!--    <ul class="vgxai-simple-iocn-list vgxai-version-1">
+                        <li><i class="fa fa-phone"></i>+91-700 7311343</li>
+                    </ul> -->
+                     <li><i class="fa fa-envelope-o"></i> vgx.ai01@gmail.com</li>
+                </div>
+            </div><!-- .vgxai-header-top END -->
+            <div class="vgxai-main-header">
+                <div class="container">
+                    <nav class="xs_nav vgxai-nav vgxai-mega-menu">
+                        <div class="nav-header">
+                            <div class="nav-toggle"></div>
+                        </div><!---->
+                        <div class="nav-menus-wrapper" style="transition-property: none;"><span class="nav-menus-wrapper-close-button">✕</span>
+                            <ul class="nav-menu">
+
+                                                         <div class="container-logo">
+        <img src="{% static 'img/logo.png'%}" alt="" class="left-image">
+
+                                <li class=""><a href="index-v4.html">Home</a>
+                                  <!--  <ul class="nav-dropdown">
+                                        <li><a href="index.html">home version 1</a></li>
+                                        <li><a href="index-v2.html">home version 2</a></li>
+                                        <li><a href="index-v3.html">home version 3</a></li>
+                                        <li><a href="index-v4.html">home version 4</a></li>
+                                        <li><a href="index-v5.html">home version 5</a></li>
+                                    </ul> -->
+                                </li>
+                                <li class=""><a href="index-v4/#about">about</a>
+                                    <!--<ul class="nav-dropdown">
+                                        <li><a href="about.html">about version 1</a></li>
+                                        <li><a href="about-v2.html">about version 2</a></li>
+                                        <li><a href="about-v3.html">about version 3</a></li>
+                                        <li><a href="about-v4.html">about version 4</a></li>
+                                        <li><a href="about-v5.html">about version 5</a></li>
+                                    </ul>-->
+                                </li>
+                                <li><a href="index-v4.html/#services">services</a>
+                                 <!--    <ul class="nav-dropdown">
+                                       <li><a href="service.html">Software Development</a></li>
+                                        <li><a href="service-v1.html">Designing</a></li>
+                                        <li><a href="service-v2.html">Marketing</a></li>
+                                    </ul>-->
+                                </li>
+                            <!--     <li><a href="#">portfolio</a>
+                                    <ul class="nav-dropdown">
+                                        <li><a href="#">portfolio version 1</a>
+                                            <ul class="nav-dropdown">
+                                                <li><a href="portfolio-v1.html">portfolio filtering</a></li>
+                                                <li><a href="portfolio-v1-3d.html">portfolio 3d filtering</a></li>
+                                                <li><a href="portfolio-v1-2.html">portfolio out filtering</a></li>
+                                                <li><a href="portfolio-v1-2-3d.html">portfolio 3d out filtering</a></li>
+                                            </ul>
+                                        </li> -->
+                                <!--         <li><a href="#">portfolio version 2</a>
+                                            <ul class="nav-dropdown">
+                                                <li><a href="portfolio-v2.html">portfolio filtering</a></li>
+                                                <li><a href="portfolio-v2-3d.html">portfolio 3d filtering</a></li>
+                                                <li><a href="portfolio-v2-1.html">portfolio out filtering</a></li>
+                                                <li><a href="portfolio-v2-1-3d.html">portfolio 3d out filtering</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">portfolio version 3</a>
+                                            <ul class="nav-dropdown">
+                                                <li><a href="portfolio-v3.html">portfolio filtering</a></li>
+                                                <li><a href="portfolio-v3-3d.html">portfolio 3d filtering</a></li>
+                                                <li><a href="portfolio-v3-1.html">portfolio out filtering</a></li>
+                                                <li><a href="portfolio-v3-1-3d.html">portfolio 3d out filtering</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="portfolio-single.html">portfolio-single</a></li>
+                                    </ul>
+                                </li> -->
+                           <!--      <li><a href="#">blog</a>
+                                    <ul class="nav-dropdown">
+                                        <li><a href="blog.html">blog version 1</a></li>
+                                        <li><a href="blog-v2.html">blog version 2</a></li>
+                                        <li><a href="blog-post.html">blog post</a></li>
+                                    </ul>
+                                </li> -->
+                                <li><a href="index-v4.html/#contact">Contact</a>
+                                  <!--  <ul class="nav-dropdown">
+                                        <li><a href="contact.html">contact version 1</a></li>
+                                        <li><a href="contact-v2.html">contact version 2</a></li>
+                                        <li><a href="contact-v3.html">contact version 3</a></li>
+                                    </ul>-->
+                                </li>
+                                <li><a href="element_appointment-v2.html">Developers</a>
+                                    <!--  <ul class="nav-dropdown">
+                                          <li><a href="contact.html">contact version 1</a></li>
+                                          <li><a href="contact-v2.html">contact version 2</a></li>
+                                          <li><a href="contact-v3.html">contact version 3</a></li>
+                                      </ul>-->
+                                  </li>
+                                  <li><a href="index-v4.html/#faq">FAQ</a>
+                                    <!--  <ul class="nav-dropdown">
+                                          <li><a href="contact.html">contact version 1</a></li>
+                                          <li><a href="contact-v2.html">contact version 2</a></li>
+                                          <li><a href="contact-v3.html">contact version 3</a></li>
+                                      </ul>-->
+                                  </li>
+                               <!-- <li><a href="#">element</a>
+                                    <div class="megamenu-panel">
+                                        <div class="mega-menu-overlay-img"></div>
+                                        <div class="megamenu-lists">
+                                            <ul class="megamenu-list list-col-4">
+                                                <li class="megamenu-list-title"><a href="#">other</a></li>
+                                                <li><a href="element_menu.html">Menu Styles</a></li>
+                                                <li><a href="element_footer.html">footer Styles</a></li>
+
+                                                <li><a href="element_appointment.html">appointment</a></li>
+                                                <li><a href="element_appointment-v2.html">appointment Styles</a></li>
+                                                <li><a href="element_call-to-action.html">call to action Styles</a></li>
+                                                <li><a href="element_team.html">team</a></li>
+                                                <li><a href="element_team-v2.html">team Styles</a></li>
+                                            </ul>
+                                            <ul class="megamenu-list list-col-4">
+                                                <li class="megamenu-list-title"><a href="#">other</a></li>
+                                                <li><a href="element_fun-fact.html">fun fact Styles</a></li>
+                                                <li><a href="element_pricing.html">pricing</a></li>
+                                                <li><a href="element_pricing-v2.html">pricing Styles</a></li>
+                                                <li><a href="element_sponsor.html">Clients & sponsor</a></li>
+                                                <li><a href="element_what-we-do.html">what we do</a></li>
+                                                <li><a href="element_tab.html">tab Styles</a></li>
+                                                <li><a href="element_faq.html">faq Accordion Styles</a></li>
+
+                                            </ul>
+                                            <ul class="megamenu-list list-col-4">
+                                                <li class="megamenu-list-title"><a href="#">other</a></li>
+                                                <li><a href="element_comming-soon.html">coming soon</a></li>
+                                                <li><a href="element_comming-soon-v2.html">coming soon 2</a></li>
+                                                <li><a href="element_404.html">404</a></li>
+                                                <li><a href="element_shop.html">shop</a></li>
+                                                <li><a href="cart.html">cart</a></li>
+                                                <li><a href="product-details.html">product details</a></li>
+                                            </ul>
+                                            <ul class="megamenu-list list-col-4">
+                                                <li class="megamenu-list-title"><a href="#">image</a></li>
+                                                <li class="text-content">
+                                                    <p>
+                                                        One morning, when Gregor Samsa woke from troubled dreams, he found.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>-->
+                            </div></ul>
+                        </div>
+                    </nav>  
+                </div>
+            </div><!-- .vgxai-main-header END -->
+        </header><!-- .vgxai-header-section END -->
+        <!-- Main menu closed -->
+
+        <!-- Inner welcome -->
+        <section class="vgxai-inner-welocme-section vgxai-bg" style="background-image: url({% static 'img/inner-section-bg.jpg' %});">
+            <div class="vgxai-black-overlay"></div>
+            <div class="container">
+                <div class="vgxai-inner-welcome-content">
+                    <img src="{% static 'img/vgx white.png'%}" alt="">
+                    <h1 class="color-white">For Developers</h1>
+                    <p class="color-white">Let's shape the future together!</p>
+                </div><!-- .vgxai-inner-welcome-content END -->
+                <!-- <div class="vgxai-inner-welcome-footer-content"> -->
+                  <!--  <ul class="vgxai-breadcrumb">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Apointment</a></li>
+                    </ul>-->
+                <!-- </div>.vgxai-inner-welcome-footer-content END -->
+            </div>
+        </section><!-- .vgxai-inner-welocme-section END -->
+        <!-- Inner welcome end -->
+
+        <div class="mt-70" ><h3 class="vgx-join-headline-container text-center color-purple" style="font-size: 40px;" >Join us at VGX</h></div>
+        <!-- Added Manually-->
+        <!--Added "why work with us" Chart-->
+        <div class="vgx-carrer-growth-chart">
+            <div class="vgx-carrer-chart-column">
+                <div class="vgx-carrer-chart-row">
+                <div class ='vgx-carrer-chart-header'>
+                    <div class = 'vgx-carrer-chart-icon'>
+                        <span>
+                            <img src="{% static 'img/flexibility.png'%}" alt="">
+                        </span>
+                    </div>
+                    <div class ='vgx-carrer-chart-heading'>Work flexibility</div>
+                </div>
+                                <div class='text-content'>
+                                    Enjoy the freedom to work from anywhere, promoting a healthy work-life balance and accommodating different lifestyles.   </div>
+            </div>
+                        <div class = "vgx-carrer-chart-row">
+                <div class ='vgx-carrer-chart-header'>
+                    <div class = 'vgx-carrer-chart-icon'>
+                        <span>
+                            <img src="{% static 'img/cutting edge.png'%}" alt="">
+                        </span>
+                    </div>
+                    <div class ='vgx-carrer-chart-heading'>Cutting-Edge Training</div>
+                </div>
+                                <div class='text-content'>
+                                    Access to the latest tools and technologies ensures you stay at the forefront of industry advancements.  </div>
+            </div>
+            </div>
+            <div class="vgx-carrer-chart-column">
+                <div class="vgx-carrer-chart-row">
+                <div class ='vgx-carrer-chart-header'>
+                    <div class = 'vgx-carrer-chart-icon'>
+                        <span>
+                            <img src="{% static 'img/global.png'%}" alt="">
+                        </span>
+                    </div>
+                    <div class ='vgx-carrer-chart-heading'>Global Reach</div>
+                </div>
+                                <div class='text-content'>
+                                    Collaborate with clients and teams from around the world, gaining exposure to international markets and perspectives.
+
+
+                    </div>
+            </div>
+                        <div class = "vgx-carrer-chart-row">
+                <div class ='vgx-carrer-chart-header'>
+                    <div class = 'vgx-carrer-chart-icon'>
+                        <span>
+                            <img src="{% static 'img/diversity.png' %}" alt="">
+                        </span>
+                    </div>
+                    <div class ='vgx-carrer-chart-heading'>Diverse Projects</div>
+                </div>
+                                <div class='text-content'>
+                      VGX offers a wide range of projects, allowing you to work on diverse and challenging assignments that expand your skillset.
+                    </div>
+            </div>
+            </div>
+            <div class="vgx-carrer-chart-column">
+                <div class="vgx-carrer-chart-row">
+                <div class ='vgx-carrer-chart-header'>
+                    <div class = 'vgx-carrer-chart-icon'>
+                        <span>
+                            <img src="{% static 'img/partnership.png'%}" alt="">
+                        </span>
+                    </div>
+                    <div class ='vgx-carrer-chart-heading'>Strong Partnerships</div>
+                </div>
+                                <div class='text-content'>
+                                    Benefit from VGX's network of trusted partnerships, expanding your opportunities and resources.
+                    </div>
+            </div>
+                        <div class="vgx-carrer-chart-row">
+                <div class ='vgx-carrer-chart-header'>
+                    <div class = 'vgx-carrer-chart-icon'>
+                        <span>
+                            <img src="{% static 'img/remote.png'%}" alt="">
+                                                        <!-- <i class="bi bi-6-circle-fill"></i> -->
+                        </span>
+                    </div>
+                    <div class ='vgx-carrer-chart-heading'>Remote Work</div>
+                </div>
+                                <div class='text-content'>
+                                    Enjoy the flexibility of remote work, allowing you to choose the environment that suits your productivity and comfort best.
+                    </div>
+            </div>
+            </div>        
+            </div>
+            <!--End of "why work with us" chart-->
+            <div class="mt-70" ><h2 class="element-header-example text-center">Send us your application</h2></div>
+
+        <!-- booking section -->
+        <section class="vgxai-booking-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                       <!----> <div class="vgxai-booking-text-wraper">
+                            <div class="vgxai-booking-content-text vgxai-border vgxai-version-3">
+                                <div class="vgxai-booking-text">
+                                    <h2>Be a part of VGX!</h2>
+                                    <h3>Grow with us</h3>
+                                    <div class="vgxai-icon-bg-text">
+                                        <p>At VGX, we value creativity, expertise, and a commitment to excellence. Your skills could be the perfect fit for our collaborative environment. We look forward to reviewing your applications and exploring the possibilities of working together to shape the future.  </p>
+                                    </div><!-- .vgxai-icon-bg-text END -->
+                                    <ul>
+                                       <!-- <li>Mon - Wed : 8:00am - 06:00pm</li>
+                                        <li>Thu - Sat : 10:00am - 10:00pm</li>
+                                        <li>Sunday: Close</li>-->
+                                    </ul>
+                                </div><!-- .vgxai-booking-text END -->
+                            </div><!-- .vgxai-booking-content-text END -->
+                        </div><!-- .vgxai-booking-text-wraper END -->
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
+                        <div class="vgxai-booking-form-wraper">
+                            
+                            <form action="{% url 'devloper' %}" method="POST" >
+                                {% csrf_token %}
+                               
+    
+                                <input type="hidden" name="action" value="send_appointment_form"/>
+                                <div class="alert hidden" id="vgxai-form-msg"></div>
+                                <div class="vgxai-service-and-date">
+                                    <h2></h2>
+                                    <div class="vgxai-select">
+                                        <div class="input-group">
+                                            <select name="appointment-service" id="appointment-service" class="form-control">
+                                                <option value="">Select your Expertise</option>
+                                                <option value="Web Devloper">Web Developer</option>
+                                                <option value="Designing">Designing</option>
+                                                <option value="Digital Marketing">Digital Marketing</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div><!-- .vgxai-select END -->
+                                    <!-- <div class="vgxai-spilit-container"> -->
+                                        <!-- <div class="vgxai-date-select vgxai-select"> -->
+                                          <!--  <div class="input-group">
+                                                <input type="text" id="appointment-date" class="form-control datepicker" name="appointment-date" placeholder="Date Shedule">
+                                            </div>-->
+                                        <!-- </div>.vgxai-date-select END -->
+                                        <!-- <div class="vgxai-select"> -->
+                                            <!-- <div class="input-group"> -->
+                                              <!--  <select name="appointment-time" id="appointment-time" class="form-control">
+                                                    <option value="">Time Shedule</option>
+                                                    <option value="12:00 AM">12:00 AM</option>
+                                                    <option value="12:30 AM">12:30 AM</option>
+                                                    <option value="01:00 AM">01:00 AM</option>
+                                                    <option value="01:30 AM">01:30 AM</option>
+                                                    <option value="02:00 AM">02:00 AM</option>
+                                                    <option value="02:30 AM">02:30 AM</option>
+                                                    <option value="03:00 AM">03:00 AM</option>
+                                                    <option value="03:30 AM">03:30 AM</option>
+                                                    <option value="04:00 AM">04:00 AM</option>
+                                                    <option value="04:30 AM">04:30 AM</option>
+                                                    <option value="05:00 AM">05:00 AM</option>
+                                                    <option value="05:30 AM">05:30 AM</option>
+                                                    <option value="06:00 AM">06:00 AM</option>
+                                                    <option value="06:30 AM">06:30 AM</option>
+                                                    <option value="07:00 AM">07:00 AM</option>
+                                                    <option value="07:30 AM">07:30 AM</option>
+                                                    <option value="08:00 AM">08:00 AM</option>
+                                                    <option value="08:30 AM">08:30 AM</option>
+                                                    <option value="09:00 AM">09:00 AM</option>
+                                                    <option value="09:30 AM">09:30 AM</option>
+                                                    <option value="10:00 AM">10:00 AM</option>
+                                                    <option value="10:30 AM">10:30 AM</option>
+                                                    <option value="11:00 AM">11:00 AM</option>
+                                                    <option value="11:30 AM">11:30 AM</option>
+                                                    <option value="12:00 PM">12:00 PM</option>
+                                                    <option value="12:30 PM">12:30 PM</option>
+                                                    <option value="01:00 PM">01:00 PM</option>
+                                                    <option value="01:30 PM">01:30 PM</option>
+                                                    <option value="02:00 PM">02:00 PM</option>
+                                                    <option value="02:30 PM">02:30 PM</option>
+                                                    <option value="03:00 PM">03:00 PM</option>
+                                                    <option value="03:30 PM">03:30 PM</option>
+                                                    <option value="04:00 PM">04:00 PM</option>
+                                                    <option value="04:30 PM">04:30 PM</option>
+                                                    <option value="05:00 PM">05:00 PM</option>
+                                                    <option value="05:30 PM">05:30 PM</option>
+                                                    <option value="06:00 PM">06:00 PM</option>
+                                                    <option value="06:30 PM">06:30 PM</option>
+                                                    <option value="07:00 PM">07:00 PM</option>
+                                                    <option value="07:30 PM">07:30 PM</option>
+                                                    <option value="08:00 PM">08:00 PM</option>
+                                                    <option value="08:30 PM">08:30 PM</option>
+                                                    <option value="09:00 PM">09:00 PM</option>
+                                                    <option value="09:30 PM">09:30 PM</option>
+                                                    <option value="10:00 PM">10:00 PM</option>
+                                                    <option value="10:30 PM">10:30 PM</option>
+                                                    <option value="11:00 PM">11:00 PM</option>
+                                                    <option value="11:30 PM">11:30 PM</option>
+                                                </select> -->
+                                            <!-- </div> -->
+                                        <!-- </div>.vgxai-select END -->
+                                    <!-- </div> -->
+                                </div><!-- .vgxai-service-and-date END -->
+                                <div class="vgxai-personal-information">
+                                    <h2></h2>
+                                    <div class="vgxai-spilit-container">
+                                        <div class="form-group first-name-group">
+                                            <input type="text" name="first-name" class="form-control" id="first-name" placeholder="First Name....">
+                                        </div>
+                                        <div class="form-group last-name-group">
+                                            <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Last Name....">
+                                        </div>
+                                    </div>
+                                        <div class="form-group email-group">
+                                            <input type="email" name="email" class="form-control" id="email" placeholder="Email Address....">
+                                        </div>
+                                        <div class="form-group phone-group">
+                                            <input type="number" name="phone" class="form-control" id="phone" placeholder="Phone Number....">
+                                        </div>
+                                    <div class="form-group massage-gropu">
+                                        <textarea class="form-control" rows="5" id="appointment-comment" placeholder="Give us your brief description" name="disc"></textarea>
+                                    </div>
+
+                                    <div class="form-group button-group">
+                                        <input type="submit" name="submit" value="submit" id="vgxai-submit">
+                                    </div>
+                                </div><!-- .vgxai-personal-information END -->
+                            </form><!-- #vgxai-booking-form END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- .vgxai-booking-section END -->
+        <!-- booking section end -->
+        
+         
+     
+
+              <!-- Footer section -->
+        <!--Footer updated-->
+        <!-- <footer class="vgxai-footer-section"> rum -->
+            <footer style="background-color: brown;">
+                <div class="footer-container">
+                    <div class="vgxai-footer-content">
+                        <!--<div class="vgxai-footer-logo">
+                            <a href="index.html">
+                                <img src="img/footer_logo.png" alt="">
+                            </a>
+                        </div> .vgxai-footer-logo END -->
+                        <div class="vgxai-subscribe-wraper" style="padding-top: 2%;">
+                            <h3>Subscribe to our mailing list</h3>
+                            <form action="https://formsubmit.co/el/tiyegu" method="POST" class="mc-form">
+                                <div class="vgxai-subscribe">
+                                    <input type="email" placeholder="Enter your email address....." id="mc-email">
+                                    <input type="submit" value="subscribe" class="vgxai-sub">
+                                    <label for="mc-email"></label>
+                                </div><!-- .vgxai-subscribe END -->
+                            </form>
+                        </div><!-- .vgxai-subscribe-wraper END -->
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4">
+                                <div class="vgxai-single-footer social-media-follow">
+                                    <p>
+                                        Follow us on Social Media
+                                    </p>
+                                    <span>
+                                        <a href="#" class="bi bi-facebook"></a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="bi bi-twitter-x"></a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="bi bi-instagram"></a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="bi bi-linkedin"></a>
+                                    </span>
+                                </div><!-- .vgxai-single-footer END -->
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4">
+                             
+                                <img src="img/big-white-vgx.png" alt="">
+                                  
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4">
+                                <div class="vgxai-single-footer vgxai-single-footer-group">
+                                    <div class="footer-info-col"><span><i class="bi bi-house-door-fill"></i></span><span><p>176 W street name, New York, NY 10014</p></span></div>
+                                    <div class="footer-info-col"><span><i class="bi bi-envelope-fill"></i></span><span><p>Email: vgx.ai01@gmail.com</p></span></div>
+                                    <div class="footer-info-col"><span><i class="bi bi-telephone-fill"></i></span><span><p>Telephone: +91-700-731-1343</p></span></div>
+                                </div><!-- .vgxai-single-footer END -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vgxai-copyright-content">
+                    <div class="container">
+                        <div class="vgxai-copyright-text">
+                            <p><a href="https://vgx.ai">Vision Graphics</a> &copy; 2023 All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer><!-- .vgxai-footer-section END -->
+            <!-- Footer section end -->
+        <script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+        <script src="{% static 'js/plugins.js'%}"></script>
+        <script src="{% static 'js/bootstrap.min.js'%}"></script>
+        <script src="{% static 'js/bootstrap-datepicker.min.js'%}"></script>
+        <script src="{% static 'js/isotope.pkgd.min.js'%}"></script>
+        <script src="{% static 'js/jquery.ajaxchimp.min.js'%}"></script>
+        <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
+        <script src="{% static 'js/appear.js'%}"></script>
+        <script src="{% static 'https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k'%}"></script>
+        <script src="{% static 'js/spectragram.min.js'%}"></script>
+        <script src="{% static 'js/main.js'%}"></script>
+    </body>
+</html>

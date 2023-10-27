@@ -170,7 +170,7 @@
                                         <li><a href="contact-v3.html">contact version 3</a></li>
                                     </ul>-->
                                 </li>
-                                <li><a href="#">Developers</a>
+                                <li><a href="{% url 'devloper' %}">Developers</a>
                                     <!--  <ul class="nav-dropdown">
                                           <li><a href="contact.html">contact version 1</a></li>
                                           <li><a href="contact-v2.html">contact version 2</a></li>
@@ -660,8 +660,10 @@ Our commitment is to create mobile apps and websites that leave a remarkable fir
                     </div>
                     <div class="col-md-12 col-sm-12 col-lg-6 col-xl-6">
                         <div class="vgxai-booking-form-wraper">
-                            <form action="#" method="POST" id="vgxai-booking-form">
-                                <input type="hidden" name="action" value="send_appointment_form"/>
+                            
+                            <form action="{% url 'index' %}" method='post'>
+                                {% csrf_token %}
+                                
                                 <div class="alert hidden" id="vgxai-form-msg"></div>
                                 <!-- <div class="vgxai-service-and-date">
                                     <h2>Service and Date</h2>
@@ -743,7 +745,7 @@ Our commitment is to create mobile apps and websites that leave a remarkable fir
                                     <h2>Your Information</h2>
                                     <div class="vgxai-spilit-container">
                                         <div class="form-group first-name-group">
-                                            <input type="text" name="first-name" class="form-control" id="first-name" placeholder="Name....">
+                                            <input type="text" name="username" class="form-control" id="username" placeholder="Name">
                                         </div>
                                         <div class="form-group email-group">
                                             <input type="email" name="email" class="form-control" id="email" placeholder="Email Address....">
@@ -753,10 +755,10 @@ Our commitment is to create mobile apps and websites that leave a remarkable fir
                                         <input type="number" name="phone" class="form-control" id="phone" placeholder="Phone Number....">
                                     </div>
                                     <div class="form-group massage-gropu">
-                                        <textarea class="form-control" rows="5" id="appointment-comment" placeholder="Tell us about your project...."></textarea>
+                                        <textarea class="form-control" rows="5" id="info" placeholder="Tell us about your project...." name="info"></textarea>
                                     </div>
                                     <div class="form-group button-group">
-                                        <input type="submit" name="submit" value="submit" id="vgxai-submit">
+                                        <input type="submit" name="submit" value="submit" >
                                     </div>
                                 </div><!-- .vgxai-personal-information END -->
                             </form><!-- #vgxai-booking-form END -->
